@@ -1,0 +1,128 @@
+.action {
+  @include text-align-center;
+  padding: 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 0 76px 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.action__wrapper {
+  position: relative;
+  height: 290px;
+  padding: 187px 61px 43px 58px;
+  background-image: url("../../img/action-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 290px;
+    padding: 185px 43px 43px 41px;
+    background-size: auto 100%;
+  }
+}
+
+.action__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 37%;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../img/icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  // background-position: 51% 20%;
+
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20%;
+    left: 35%;
+  }
+}
+
+.action__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: rgba($green-main, 0.85);
+  text-decoration: none;
+}
+
+// .video {
+//   padding-top: 17px;
+
+//   @media (min-width: $tablet-width) {
+//     padding-top: 58px;
+//   }
+// }
+
+// .video__container {
+//   @include text-centering;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .video .title {
+//   padding-bottom: 36px;
+// }
+
+// .video__text {
+//   padding-bottom: 38px;
+
+//   @media (min-width: $tablet-width) {
+//     padding-bottom: 66px;
+//   }
+// }
+
+// .video__block {
+//   position: relative;
+// }
+
+// .video__image {
+//   display: block;
+//   width: 100%;
+// }
+
+// .video__button {
+//   position: absolute;
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
+
+// .video__button::before {
+//   position: absolute;
+//   content: "";
+//   width: 48px;
+//   height: 54px;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//   background-color: rgba($white, 0.7);
+//   clip-path: polygon(100% 50%, 0 100%, 0 0);
+// }

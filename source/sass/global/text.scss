@@ -1,0 +1,42 @@
+.text {
+  @include margin-zeroing;
+  // color: $white;
+  // background-color: $blue-81;
+}
+
+.text-container {
+  @include block-centering-mobile;
+
+  @media (min-width: $tablet-width) {
+    @include block-centering-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-centering-desktop;
+  }
+}
+
+// .text-sub {
+//   color: $dark;
+//   background-color: $white;
+//   text-align: left;
+
+//   @media (min-width: $tablet-width) {
+//     text-align: center;
+//   }
+// }
+
+// .text-sub .title {
+//   color: $black;
+//   background-color: $white;
+//   text-align: left;
+
+//   @media (min-width: $tablet-width) {
+//     text-align: center;
+//   }
+// }
+
+// .text-main {
+//   color: $dark;
+//   background-color: $grey-ee;
+// }
