@@ -1,0 +1,46 @@
+// .main-container {
+// }
+
+.main-container .description {
+  @include margin-zeroing;
+}
+
+.main-container--inner {
+  border-top: 1px solid $grey-d9;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
+}
+
+.main-container--inner .title--h1 {
+  padding: 27px 0 41px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 0 163px 0;
+  }
+}
+
+.main-container--inner2 .text-container {
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-container--inner2 .title--h1 {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+}
+
+.main-container--inner2 .line__text {
+  @media (min-width: $tablet-width) {
+    margin-left: -39px;
+  }
+}

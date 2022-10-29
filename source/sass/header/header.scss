@@ -1,0 +1,40 @@
+.header {
+  text-transform: uppercase;
+  height: 55px;
+
+  @media (min-width: $tablet-width) {
+    @include block-centering-tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-centering-desktop;
+    margin-top: 53px;
+    margin-bottom: 29px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 191px;
+  height: 38px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}

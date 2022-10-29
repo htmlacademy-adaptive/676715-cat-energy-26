@@ -1,0 +1,19 @@
+.catalog__section-container--mass-gain::after {
+  top: 40px;
+  left: 10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../img/icons/catalog-sections/icon-mass-gain.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 170px;
+    left: 510px;
+    transform: scale(4);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 80px;
+    left: 67px;
+    transform: scale(2);
+  }
+}
