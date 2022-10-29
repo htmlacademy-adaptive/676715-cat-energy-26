@@ -1,0 +1,112 @@
+.pagination {
+  @include block-centering-mobile;
+  position: relative;
+  padding: 78px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -2 / -1;
+    grid-row: -2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 324px;
+    min-height: 429px;
+    margin-left: 60px;
+    padding: 161px 35px 39px 35px;
+    border: 2px solid $grey-f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    width: 245px;
+  }
+}
+
+.pagination::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $grey-eb;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+}
+
+.pagination__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.pagination__container::before,
+.pagination__container::after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  right: 43%;
+  width: 30px;
+  height: 2px;
+  background-color: $grey-d3;
+
+  @media (min-width: $tablet-width) {
+    top: 52px;
+    right: 40%;
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 82px;
+  }
+}
+
+.pagination__container::after {
+  transform: rotate(-90deg);
+}
+
+.pagination__container .title--h4 {
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.pagination__description {
+  padding-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.pagination__button {
+  width: 100%;
+  color: $grey-44;
+  background-color: $grey-f2;
+}
+
+.pagination__button:hover {
+  background-color: $grey-eb;
+}
+
+.pagination__button:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.pagination__button:active {
+  color: rgba($grey-44, 0.3);
+  background-color: $grey-eb;
+  opacity: 1;
+}
