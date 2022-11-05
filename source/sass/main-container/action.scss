@@ -1,0 +1,93 @@
+.action {
+  @include text-align-center;
+  padding: 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 0 76px 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.action__wrapper {
+  position: relative;
+  height: 290px;
+  padding: 187px 61px 43px 58px;
+  background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    padding: 71px 124px 69px 422px;
+    background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 290px;
+    padding: 185px 43px 43px 41px;
+    background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($green-main, 0.85), rgba($green-main, 0.85)), url("../../img/action/action-background-desktop@2x.png");
+    }
+  }
+}
+
+.action__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 37%;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../img/icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20%;
+    left: 35%;
+  }
+}
+
+.action__link {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.action__link:hover {
+  opacity: 0.6;
+}
+
+.action__link:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.action__link:active {
+  opacity: 0.3;
+}

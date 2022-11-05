@@ -1,0 +1,41 @@
+@mixin list-zeroing {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin margin-zeroing {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin block-centering-mobile {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin block-centering-tablet {
+  width: 709px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin block-centering-desktop {
+  width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin text-align-center {
+  text-align: center;
+}
+
+@mixin text-align-left {
+  text-align: left;
+}
+
+@mixin image-block {
+  display: block;
+}

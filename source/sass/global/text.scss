@@ -1,0 +1,15 @@
+.text {
+  @include margin-zeroing;
+}
+
+.text-container {
+  @include block-centering-mobile;
+
+  @media (min-width: $tablet-width) {
+    @include block-centering-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-centering-desktop;
+  }
+}
