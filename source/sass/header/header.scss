@@ -1,6 +1,6 @@
 .header {
   text-transform: uppercase;
-  height: 55px;
+  height: 52px;
 
   @media (min-width: $tablet-width) {
     @include block-centering-tablet;
@@ -9,11 +9,11 @@
     align-items: center;
     margin-top: 26px;
     margin-bottom: 26px;
-    height: 38px;
   }
 
   @media (min-width: $desktop-width) {
     @include block-centering-desktop;
+    height: 59px;
     margin-top: 53px;
     margin-bottom: 29px;
   }
@@ -23,27 +23,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-//   position: absolute;
   width: 191px;
   height: 38px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-left: 20px;
-//   left: 20%;
+  padding-top: 10px;
+  padding-bottom: 17px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    // z-index: 3;
-    // left: 290px;
     width: 174px;
+    height: 52px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    // left: 507px;
     width: 202px;
+    height: 59px;
   }
 }
 
-// .header__image {
-//   display: block;
-// }
+.header__logo-image {
+  display: block;
+  width: 100%;
+}
+
+.header__logo-title {
+  padding-top: 7px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
+}

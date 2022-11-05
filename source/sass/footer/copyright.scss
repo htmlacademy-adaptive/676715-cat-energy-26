@@ -12,19 +12,23 @@
 .copyright__icon {
   display: grid;
   place-items: center;
-  color: $grey-66;
-  // margin-left: 8px;
+  fill: $grey-66;
+  margin-left: 8px;
 }
 
-.copyright__link:hover .copyright__icon {
+.copyright__link:hover {
   color: $green-main;
 }
 
-.copyright__link:focus .copyright__icon {
+.copyright__link:focus {
   opacity: 0.7;
   outline: none;
 }
 
-.copyright__link:active .copyright__icon {
+.copyright__link:active {
   opacity: 0.3;
+}
+
+.copyright__text {
+  max-width: 72%;
 }

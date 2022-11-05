@@ -1,27 +1,9 @@
-// .footer {
-//   @include transform-align;
-//   padding: 39px 0 23px 0;
-
-//   @media (min-width: $tablet-width) {
-//     padding: 36px 60px 36px 45px;
-//   }
-
-  // @media (min-width: $desktop-width) {
-  //   position: relative;
-//     padding-left: 104px;
-//     padding-right: 120px;
-//   }
-// }
-
 .footer__wrapper {
   padding: 40px 0 22px 0;
   background-color: $grey-f2;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 0 60px 0;
+    padding: 58px 0 60px 0;
   }
 }
 
@@ -61,6 +43,7 @@
   padding-top: 22px;
 
   @media (min-width: $tablet-width) {
+    width: 163px;
     padding-top: 0;
   }
 }

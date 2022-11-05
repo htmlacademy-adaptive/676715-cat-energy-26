@@ -1,6 +1,7 @@
 .map {
   @media (min-width: $desktop-width) {
     position: relative;
+    overflow: hidden;
   }
 }
 
@@ -10,26 +11,29 @@
 
 .map__content {
   @include block-centering-mobile;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 26px 0;
+  padding: 26px 0 16px 0;
 
   @media (min-width: $tablet-width) {
     @include block-centering-tablet;
-    padding: 60px 40px 56px 40px;
+    padding: 60px 40px 50px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    // @include block-centering-desktop;
     position: absolute;
     top: 95px;
     left: 110px;
     width: 565px;
     margin: 0;
-    padding: 60px 80px 56px 80px;
+    padding: 60px 80px 50px 80px;
     background-color: $white;
   }
+}
+
+.map__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 .map__item {
@@ -52,10 +56,6 @@
     text-align: left;
   }
 }
-
-// .map__address--street {
-//   padding-bottom: 10px;
-// }
 
 .map iframe {
   display: block;

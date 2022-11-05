@@ -1,0 +1,79 @@
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-top: 5px;
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 56px;
+  }
+}
+
+/* Mark */
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-cd;
+
+  @media (min-width: $tablet-width) {
+    transform: scale(1.33);
+  }
+}
+
+.control__input:hover + .control__mark {
+  border-color: $grey-ba;
+}
+
+.control__input:focus ~ .control__mark {
+  border-color: $grey-66;
+  outline: none;
+}
+
+.control__input:active + .control__mark {
+  border-color: $grey-22;
+  outline: none;
+}
+
+.control__input:disabled + .control__mark,
+.control__input:disabled:hover + .control__mark {
+  border-color: $grey-ba;
+  opacity: 0.3;
+}
+
+.control__input:disabled ~ .control__label,
+.control__input:disabled:hover ~ .control__label {
+  color: rgba($black, 0.3);
+}
+
+/* Checkbox */
+.control__input[type="checkbox"]:checked + .control__mark {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  padding: 10px 8px;
+  background-image: url("../../img/icons/icon-form-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Radio */
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  background-color: $green-main;
+  border-radius: 50%;
+}

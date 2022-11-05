@@ -1,11 +1,10 @@
 .social {
-  padding: 20px 0;
+  padding: 20px 0 15px 0;
   border-top: 1px solid $grey-d9;
   border-bottom: 1px solid $grey-d9;
-//   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 20px 0 40px;
     border-top: 0;
     border-bottom: 0;
   }
@@ -13,13 +12,11 @@
 
 .social__element:not(:last-child) {
   margin-right: 26px;
+  margin-bottom: 10px;
 }
 
 .social__link {
   display: block;
-  // position: relative;
-  // display: grid;
-  // place-items: center;
   width: 27px;
   height: 19px;
   color: $grey-66;
@@ -43,5 +40,5 @@
 .social__icon {
   display: grid;
   place-items: center;
-  color: $grey-66;
+  fill: $grey-66;
 }

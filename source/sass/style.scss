@@ -10,6 +10,7 @@
 
 // Header
 @import "./header/header.scss";
+@import "./header/logo.scss";
 @import "./header/main-nav.scss";
 @import "./header/site-list.scss";
 
@@ -17,14 +18,8 @@
 @import "./main-container/main-container.scss";
 @import "./main-container/banner.scss";
 @import "./main-container/catalog.scss";
-@import "./main-container/slimming.scss";
-@import "./main-container/mass-gain.scss";
 @import "./main-container/advantages.scss";
 @import "./main-container/example.scss";
-@import "./main-container/map.scss";
-// @import "./main-container/parametrs.scss";
-// @import "./main-container/bridge.scss";
-
 
 // Catalog - Main-container
 @import "./main-container/products.scss";
@@ -36,8 +31,11 @@
 // Form - Main-container
 @import "./main-container/program.scss";
 @import "./main-container/form.scss";
+@import "./main-container/field.scss";
+@import "./main-container/control.scss";
 
-// // Footer
+// Footer
 @import "./footer/footer.scss";
+@import "./footer/map.scss";
 @import "./footer/social.scss";
 @import "./footer/copyright.scss";

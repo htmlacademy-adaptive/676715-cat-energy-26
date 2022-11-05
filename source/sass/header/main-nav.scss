@@ -5,7 +5,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -40px;
+  top: -45px;
   right: 0;
   z-index: 3;
   display: block;
@@ -37,12 +37,12 @@
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   content: "";
-  top: 17px;
+  top: 16px;
   right: 20px;
   width: 24px;
   height: 1.5px;
   background-color: $black;
-  box-shadow: 0 9px 0 0 $black, 0 18px 0 0 $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
 .main-nav--closed .main-nav__item {
@@ -57,6 +57,8 @@
 
 .main-nav--nojs .main-nav__wrapper {
   position: relative;
+  z-index: 10;
+  padding-top: 10px;
 }
 
 .main-nav--nojs .main-nav__item {
@@ -97,11 +99,11 @@
   opacity: 0.3;
 }
 
-.main-nav__wrapper {
+.main-nav--opened .main-nav__wrapper {
   position: relative;
   left: 0;
-  top: 17px;
-  z-index: 3;
+  top: 14px;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -111,43 +113,29 @@
 
 .main-nav__list {
   @include list-zeroing;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    width: 440px;
+    justify-content: flex-end;
+    width: 450px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    width: 600px;
   }
 }
 
 .main-nav__item:not(:first-child) {
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
+    margin-left: 24px;
   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 240px;
-//     padding-bottom: 0;
-//   }
 }
-
-// .main-nav__item:nth-child(2) {
-//   @media (min-width: $tablet-width) {
-//     margin-right: 152px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin-right: 240px;
-//   }
-// }
 
 .main-nav__link {
   display: block;
-  padding: 22px 25px 24px 25px;
+  padding: 21px 25px 17px 25px;
 
   @media (min-width: $tablet-width) {
     padding: 5px;

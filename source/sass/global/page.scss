@@ -6,7 +6,7 @@
 .page__body {
   min-height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $grey-44;
@@ -16,22 +16,4 @@
     font-size: 16px;
     line-height: 24px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 1200px;
-  //   margin: 0 auto;
-  // }
 }
-
-// .page__container {
-//   @include text-centering;
-//   width: 280px;
-
-//   @media (min-width: $tablet-width) {
-//     width: 648px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 1200px;
-//   }
-// }
