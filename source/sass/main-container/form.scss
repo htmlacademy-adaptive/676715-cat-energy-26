@@ -168,14 +168,6 @@
   color: $grey-22;
 }
 
-.field:focus + .form__icon {
-  color: $green-main;
-}
-
-.field__error + .form__icon {
-  color: $error;
-}
-
 .form__field-phone .form__label {
   padding-right: 8px;
 
