@@ -39,3 +39,11 @@
 .field:disabled:focus-visible {
   outline: none;
 }
+
+.field:focus + .form__icon {
+  color: $green-main;
+}
+
+.field__error + .form__icon {
+  color: $error;
+}

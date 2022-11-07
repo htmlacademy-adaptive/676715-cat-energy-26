@@ -4,6 +4,7 @@
 @import "./global/fonts.scss";
 @import "./global/title.scss";
 @import "./global/text.scss";
+@import "./global/text-container.scss";
 @import "./global/button.scss";
 @import "./global/global.scss";
 @import "./global/page.scss";
@@ -20,9 +21,11 @@
 @import "./main-container/catalog.scss";
 @import "./main-container/advantages.scss";
 @import "./main-container/example.scss";
+@import "./main-container/example-parametrs.scss";
 
 // Catalog - Main-container
 @import "./main-container/products.scss";
+@import "./main-container/products-parametrs.scss";
 @import "./main-container/pagination.scss";
 @import "./main-container/products-additional.scss";
 @import "./main-container/line.scss";

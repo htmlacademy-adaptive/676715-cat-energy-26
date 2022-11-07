@@ -1,0 +1,37 @@
+.products-parametrs {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.products-parametrs__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 7px 0;
+    border-bottom: 1px solid $grey-cd;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
+}
+
+.products-parametrs__container:first-child {
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
+}
+
+.products-parametrs__value {
+  @include margin-zeroing;
+  margin-left: 0;
+  text-align: right;
+}
